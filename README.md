@@ -27,6 +27,9 @@ Most of the students who received this education assistantship program pursued h
 
 ![Alt Text](total_expenses_by_country.png)
 
+
+Based on the graph, almost 75%+ of the studentd received $20-$60K assistance each year. 25% of the students received $40-$60K assistance each year. 
+
 ![Alt Text](by_year.png)
 
 ## Demo Video

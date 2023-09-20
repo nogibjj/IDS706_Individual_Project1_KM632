@@ -52,7 +52,7 @@ def create_graph2(df):
                    ]
     df['Cost Range'] = pd.cut(df['Cost Per Year'], bins=cost_bins, labels=cost_labels)
     cost_range_counts = df['Cost Range'].value_counts()
-    plt.figure(figsize=(7, 7))
+    plt.figure(figsize=(6, 6))
     plt.pie(cost_range_counts, labels=cost_range_counts.index, autopct='%1.1f%%', startangle=140)
 
     plt.title('Distribution of Students by Cost Range per Year. Total students: 422')
