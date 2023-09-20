@@ -54,7 +54,7 @@ def create_graph2(df):
     cost_range_counts = df['Cost Range'].value_counts()
     plt.figure(figsize=(6, 6))
     plt.pie(cost_range_counts, 
-            labels=cost_range_counts.index, 
+            labels=cost_labels, 
             autopct='%1.1f%%', 
             startangle=140
             )
