@@ -1,6 +1,6 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/nogibjj/IDS706_Individual_Project1_KM632)
 
-install](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/install.yml)
+[![install](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/install.yml)
 
 [![lint](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/lint.yml)
 
