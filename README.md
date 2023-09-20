@@ -1,5 +1,3 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/nogibjj/IDS706_Individual_Project1_KM632)
-
 [![install](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/install.yml)
 
 [![lint](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/lint.yml)
@@ -8,9 +6,11 @@
 
 [![test](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/IDS706_Individual_Project1_KM632/actions/workflows/test.yml)
 
+# IDS 706 Individual Project #1 
 
+## Analysis on Education Assistant Program
 
-Since early 2000s Mongolain government started providing tuition assistant programs to high school students who are accepted to the top 100 universities in the world. The government paid for all educational expenses including tuition, boarding etc. Per the program contract, students were expected to go back to Mongolia and work for at least 3 years after graduation. 
+Since early 2000s Mongolain government started providing education assistant programs to high school students who are accepted to the top 100 universities in the world. The government paid for all educational expenses including tuition, boarding etc. Per the program contract, students were expected to go back to Mongolia and work for at least 3 years after graduation. 
 
 Recently, the high percentage of people who don't follow through with the contract obligation became a huge social issue in Mongolia. In this report, we take a look the what the mean, median of the student loan amounts were as well as the standard deviation 
 
