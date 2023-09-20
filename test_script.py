@@ -1,17 +1,34 @@
-import unittest
-from main import add
+import pytest
+import pandas as pd
+from main import prepare_dataset
 
 
-class TestSumFunction(unittest.TestCase):
-    def test_sum_positive_numbers(self):
-        self.assertEqual(add(1, 2), 3)
+TEST_FILE = "test_data.xlsx"
 
-    def test_sum_negative_numbers(self):
-        self.assertEqual(add(-1, -2), -3)
+sample_data = {
+    'Эцэг /эх/-ийн нэр / Өөрийн нэр': ['John Doe', 'Jane Smith'],
+    'Суралцаж байгаа улс': ['USA', 'Canada'],
+    'Сургуулийн нэр': ['School A', 'School B'],
+    'Мэргэжил': ['Computer Science', 'Mathematics'],
+    'Суралцах хугацаа': [4, 5],
+    'Олгосон санхүүжил': [25000, 30000]
+}
 
-    def test_sum_mixed_numbers(self):
-        self.assertEqual(add(1, -2), -1)
+@pytest.fixture
+def test_data(tmp_path):
+    test_file_path = TEST_FILE
+    df = pd.DataFrame(sample_data)
+    df.to_excel(test_file_path, index=False)
+    return test_file_path
 
-
-if __name__ == "__main__":
-    unittest.main()
+def test_prepare_dataset(test_data):
+    df = prepare_dataset(test_data)
+    
+    assert isinstance(df, pd.DataFrame), "Expected a DataFrame"
+    
+    expected_columns = [
+        'First and Last Name', 'School Country', 'School Name',
+        'Intended Major', 'Study Duration(in years)', 'Loan Amount(in USD)'
+    ]
+    assert all(col in df.columns for col in expected_columns), "Missing columns"
+    

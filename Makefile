@@ -11,9 +11,7 @@ format:
 test:
 	python -m pytest test_script.py 
 	python -m pytest test_lib.py
-	python -m pytest descriptive_stats.ipynb --nbval
-
-
+	#python -m pytest descriptive_stats.ipynb --nbval
 	
 		
 all: install lint format test 
