@@ -3,17 +3,17 @@ install:
 		pip install -r requirements.txt
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
-	# disables refactor and conection messages
-	# --ignore-patterns - tells it to ignore these when completing linting 
-	# analyze codes ending with .py
+	ruff *.py
 
 format:	
 	black *.py 
 
 test:
-	python -m pytest -vv --cov=main test_*.py
-	# --cov=main runs code coverage analysis on main 
+	python -m pytest test_script.py 
+	python -m pytest test_lib.py
+	python -m pytest descriptive_stats.ipynb --nbval
+
+
 	
 		
 all: install lint format test 
