@@ -1,6 +1,5 @@
 import pandas as pd
-from lib import find_mean, find_median, find_std, create_graph
-
+from lib import find_mean, find_median, find_std, create_graph1,create_graph2
 
 def prepare_dataset(file_path):
     df = pd.read_excel(file_path)
@@ -16,7 +15,8 @@ def prepare_dataset(file_path):
     mean = find_mean(df)
     median = find_median(df)
     std = find_std(df)
-    create_graph(df)
+    create_graph1(df)
+    create_graph2(df)
     
     print("Mean:", mean)
     print("Median:", median)

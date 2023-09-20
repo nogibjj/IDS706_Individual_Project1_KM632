@@ -26,3 +26,7 @@ On average, the mongolian government have provided $117K assistant to a student,
 Most of the students who received this education assistantship program pursued higher education in the USA, whopping $35M were spent for USA alone. The second highest country was Canada, around $7M.
 
 ![Alt Text](total_expenses_by_country.png)
+
+![Alt Text](by_year.png)
+
+## Demo Video
