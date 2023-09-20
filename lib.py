@@ -25,10 +25,14 @@ def currency_formatter(x,pos):
         return f"${int(x):,}"
 
 def create_graph(df):
-    country_expenses = df.groupby('School Country')['Loan Amount(in USD)'].sum().reset_index()
+    cost = df.groupby('School Country')['Loan Amount(in USD)'].sum().reset_index()
     fig, ax = plt.subplots(figsize=(12, 6))
     fig.suptitle('Total Expenses by Country')
-    plt.bar(country_expenses['School Country'], country_expenses['Loan Amount(in USD)'], color='blue')
+    plt.bar(
+        cost['School Country'],
+        cost['Loan Amount(in USD)'],
+        color='blue'
+    )
     plt.xlabel('School Country')
     plt.ylabel('Total Expenses')
     plt.xticks(rotation=90)  

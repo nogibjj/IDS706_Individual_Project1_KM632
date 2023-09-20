@@ -4,7 +4,13 @@ from lib import find_mean, find_median, find_std, create_graph
 
 def prepare_dataset(file_path):
     df = pd.read_excel(file_path)
-    new_column_names = {'Эцэг /эх/-ийн нэр / Өөрийн нэр': 'First and Last Name', 'Суралцаж байгаа улс': 'School Country', 'Сургуулийн нэр': 'School Name', 'Мэргэжил':'Intended Major', 'Суралцах хугацаа': 'Study Duration(in years)', 'Олгосон санхүүжил':'Loan Amount(in USD)'}
+    new_column_names = {'Эцэг /эх/-ийн нэр / Өөрийн нэр': 'First and Last Name', 
+                        'Суралцаж байгаа улс': 'School Country', 
+                        'Сургуулийн нэр': 'School Name', 
+                        'Мэргэжил':'Intended Major', 
+                        'Суралцах хугацаа': 'Study Duration(in years)', 
+                        'Олгосон санхүүжил':'Loan Amount(in USD)'
+                        }
     df.rename(columns=new_column_names, inplace=True)
     
     mean = find_mean(df)
